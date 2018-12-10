@@ -1,0 +1,23 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	background-color: grey;
+	text-align: center;
+}
+p{
+	width: 100%;
+	font-size: 22px;
+	
+}
+
+@media screen and (max-width: 720px){
+	p{
+		width: 100%;
+
+	}
+	h1{
+		width: 100%;
+	}
+}
