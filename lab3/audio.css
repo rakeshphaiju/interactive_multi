@@ -6,8 +6,8 @@ button {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #fff;
-    background-color: #4CAF50;
+    color: #6B1A1A;
+    background-color: #318034;
     border: none;
     border-radius: 0.5em;
     margin: auto;
@@ -15,11 +15,11 @@ button {
   }
   
   button:hover {
-      background-color: #3e8e41
+      background-color: #639865
   }
   
   input[type="range"] {
-      width: 20em;
+      width: 22em;
   }
   
   #container{
