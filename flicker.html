@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About me</title>
+  <title>Search image</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flickr.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/flicker.js"></script>
+
 </head>
 <body>
 
@@ -24,21 +28,20 @@
             <li><a href="lab3.html">Lab 3</a></li>
             <li><a href="lab4.html">Lab 4</a></li>
             <li><a href="lab5.html">Lab 5</a></li>
-            <li><a href="flicker.html">Lab 6</a></li>
+            <li><a class="active" href="flicker.html">Lab 6</a></li>
         </ul>
       </li>
-      <li><a class="active" href="aboutme.html">About me</a></li>
+      <li><a href="aboutme.html">About me</a></li>
     </ul>
   </div>
 </nav>
-  
-<div class="container-fluid">
-    <h2>About me</h2>
-        <p>My name is Rakesh Phaiju. Currently, i am a student studying Information technology in Oulu University of Applied Sciences. </p>
-            <br>
-    <h2>Contact me</h2>
-    <p>You can also find me on following social media platforms.</p>
-</div>
-
+  <div class="container-fluid">
+    <h2>Search Images from Flickr</h2>
+    <hr >
+    <input type="text" name="input" id="search">
+    <button onclick="make_search()">Search</button>
+    <div id="images" class="container-fluid">
+    </div>
+  </div>
 </body>
 </html>

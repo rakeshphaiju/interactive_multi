@@ -1,0 +1,45 @@
+body{
+	margin: 10px;
+	padding: 0px;
+}
+h1{
+	background-color: grey;
+	text-align: center;
+}
+input[type=text]{
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid red;
+	border-radius: 4px;
+}
+input[type=button] {
+	background-color:darkcyan; 
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+p{
+	margin: 20px;
+	width: 100%;
+	font-size: 22px;
+	color:black ;
+	
+}
+
+@media screen and (max-width: 720px){
+	p{
+		width: 100%;
+
+	}
+	h1{
+		width: 100%;
+	}
+}
