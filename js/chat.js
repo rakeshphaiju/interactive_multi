@@ -5,7 +5,7 @@ var msg = {
   text: document.getElementById('input').value
 
 };
-
+// When the connection is open, send some data to the server
 connection.onopen = function() {
 
   var p = document.createElement('p');
@@ -15,13 +15,13 @@ connection.onopen = function() {
   document.getElementById('connection').appendChild(p);
 
 };
-
+//log error
 connection.onerror = function(error) {
 
   console.log('WebSocket Error ' + error);
 
 };
-
+// Log messages from the server
 connection.onmessage = function(e) {
 
   var p = document.createElement('p');

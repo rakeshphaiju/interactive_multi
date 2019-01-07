@@ -1,6 +1,25 @@
 
 canvas {
 	border: 2px dotted black;
-	width: 200;
-	height: 200;
+	width: 300;
+	height: 300;
 }
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+  }
+  
+  body {
+	width: 80%;
+  }
+
+  button{
+    background-color: #4CAF50;
+    color: white;
+    display:inline-block;
+    padding: 12px;
+    margin: 4px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+  }

@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+        @media screen and  (max-width:768px )
+        {
+            .screen{
+                width: 100%;
+		        height: auto;
+            }
+        }
+      </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -44,22 +58,25 @@
             from any width of browser which makes our HTML responsive</p>
     
     <h2>RWD examples</h2>
-    <h3>Desktop screen size examples</h3>
-        <figure><img src="pic/desktop1.png"></figure><br>
-        <figure><img src="pic/desktop2.png"></figure>
+    <div class="images">
+        <figure><img src="pic/desktop1.png" class="screen"></figure><br>
+        <figure><img src="pic/desktop2.png" class="screen"></figure>
+        <br>
+        <figure><img src="pic/mobile1.png" class="screen"></figure><br>
+        <figure><img src="pic/mobile2.png" class="screen"></figure>
+        <br>
+    </div>
     
-    <h3>Mobile phone screen sizes</h3>
-        <figure><img src="pic/mobile1.png"></figure><br>
-        <figure><img src="pic/mobile2.png"></figure>
-    
-    <h2>Exerciese</h2>
+    <h2>Other exercises</h2>
          <p>
             <ul>
                 <li><a href="lab2_3.html" target="_blank">RWD in practice</a></li>
                 <li><a href="lab2_4.html" target="_blank">Added menu bar and picture</a></li>
-                <li><a href="lab2_5.html" target="_blank">Add person</a></li>
+                <li><a href="lab2_5.html" target="_blank">Add person responsive</a></li>
             </ul>
         </p>
 
         
 </div>
+</body>
+</html>
