@@ -1,34 +1,48 @@
-const form = document.querySelector('form');
-const ul = document.querySelector('ul');
-const button = document.querySelector('button');
-const input = document.getElementById('item');
-let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-
-localStorage.setItem('items', JSON.stringify(itemsArray));
-const data = JSON.parse(localStorage.getItem('items'));
-
-const liMaker = (text) => {
-  const li = document.createElement('li');
-  li.textContent = text;
-  ul.appendChild(li);
+function Local(value)
+{
+   return (localStorage.getItem(value) === null);
 }
+function initPersons()
+{
+   var namesArray = ["Mary", "John", "Kenny"];
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
+   if (Local("names"))
+   {
+      localStorage.setItem("names", JSON.stringify(namesArray));
+      console.log("localStorage values set: " + localStorage.getItem("names"));
+   }
+   else
+   {
+  
+   }
+   listPersons();
+}
+function listPersons()
+{
+   var personsElement = document.getElementById("list")
+   var persons = localStorage.getItem("names");
+   var persons = (persons) ? JSON.parse(persons) : [];
 
-  itemsArray.push(input.value);
-  localStorage.setItem('items', JSON.stringify(itemsArray));
-  liMaker(input.value);
-  input.value = "";
-});
+   if (Local("names"))
+   {
+      initPersons();
+   }
+   else
+   {
+      personsElement.innerHTML = "";
+      for (i = 0; i < persons.length; i++)
+      {
+         personsElement.innerHTML += "<div class=\"persons\">" + persons[i] + "</div>";
+      }
+   }
+}
+function addPerson()
+{
+   var name = document.getElementById("name").value;
+   var persons = localStorage.getItem("names");
+   var persons = (persons) ? JSON.parse(persons) : [];
 
-data.forEach(item => {
-  liMaker(item);
-});
-
-button.addEventListener('click', function () {
-  localStorage.clear();
-  while (ul.firstChild) {
-    ul.removeChild(ul.firstChild);
-  }
-});
+   persons.push(name);
+   localStorage.setItem("names", JSON.stringify(persons));
+   listPersons();
+}

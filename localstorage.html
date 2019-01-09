@@ -4,28 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Local storage</title>
-
-  <link rel="stylesheet" href="">
 </head>
 
 <body>
-
-  <div class="small-container">
-    <h1>Add person</h1>
-
-    <form>
-        <input id="item" type="text" placeholder="add person" required>
-    </form>
-      
-      <h2>Persons</h2>
-      <ul></ul>
-      
-
-  </div>
-
-  <script src="js/storage.js"></script>
+      <div class="container">
+          <h2>Add person: <input class="inputbox" type="text" id="name" value="" placeholder="Type a name...">
+          <button class="submitbtn" id="savename" onclick="addPerson()">Add</button>
+        </div><br>
+        <h2>List on persons:</h2>
+        <div id="list"></div>
+       <script src="js/storage.js"></script>
 </body>
 
 </html>
